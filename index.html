@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TITLE? </title>
+    <!-- FLEXBOX GRID -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flexboxgrid/6.3.1/flexboxgrid.min.css" type="text/css" >
+    <!-- BOOTSTRAP REBOOT NORMALIZER -->
+    <link rel="stylesheet" href="./bootstrap_reboot.css">
+    <!-- FONT AWESOME ICONS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- ANIMATION LIBRARY -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <!-- MY HELPER CLASES -->
+    <link rel="stylesheet" href="./helper.css">
+    <!-- MY STYLESHEET -->
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="header-hero-wrapper">
+        <section class="header" id="home">
+            <div class="container container-fluid">
+                <div class="row">
+                    <div class="col-sm-3 col-xs-6 flex middle-xs">
+                        <div class="header__logo-wrapper" onClick="addAnimation()">
+                            <img src="./img/logo.svg" alt="logo" class="header__logo">
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-xs-12 flex middle-xs center-xs last-xs">
+                        <div class="nav__wrapper js-nav__wrapper">
+                            <div class="nav flex around-xs js-nav">
+                                <a href="#home" class="nav__item js-nav__item">Home</a>
+                                <a href="#product" class="nav__item js-nav__item">Product</a>
+                                <a href="#about" class="nav__item js-nav__item">About</a>
+                                <a href="#contact" class="nav__item js-nav__item">Contact</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-3 col-xs-6 flex last-sm end-md center-xs">
+                        <div class="header__btn-ham-wrapper middle-xs flex between-xs">
+                            <a onClick="signUpClickHandler()" href="#" class="button button--sign-up">Sign up</a>
+                            <div class="hambur flex column around-xs bottom-xs js-hambur">
+                                <span class="hambur__line"></span>
+                                <span class="hambur__line hambur__line--middle"></span>
+                                <span class="hambur__line hambur__line--bottom"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="sign-up__background js-sign-up__background">
+                    <div class="sign-up__window">
+                        <form action="" class="flex column">
+                            <input type="text" placeholder="First name" class="sign-up__field">
+                            <input type="text" placeholder="Last Name" class="sign-up__field">
+                            <input type="text" placeholder="Username" class="sign-up__field">
+                            <input type="text" placeholder="Password" class="sign-up__field">
+                            <input type="text" placeholder="Email" class="sign-up__field">
+                            <a onClick="signUpClickHandler()" href="#" class="button button--register">Register</a>
+                            <a onClick="signUpClickHandler()" href="#" class="button button--cancel">Cancel</a>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="hero">
+            <div class="container container-fluid">
+                <div class="row">
+                    <div class="col-xs-12 flex column middle-xs">
+                        <h1 class="heading">
+                            Find the Best Solution in Seconds
+                        </h1>
+                        <h4 class="heading heading--4">
+                            If debugging is the process of removing software bugs.
+                        </h4>
+                        <div class="hero__btns-wrapper flex">
+                            <a href="" class="button button--get-started">get started</a>
+                            <a href="" class="button button--try">try for free</a>
+                        </div>
+                        <div class="hero__img-wrapper">
+                            <img src="./img/hero_img.svg" alt="" class="hero__img">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <section class="cards-section" id="about">
+        <div class="container container-fluid">
+            <div class="row">
+                <div class="col-xs-12">
+                    <div class="heading heading--2">
+                        FigmaLand was Built Specifically for You
+                    </div>
+                </div>
+                <div class="col-sm-4 col-xs-12">
+                    <div class="card">
+                        <div class="card__img-wrapper">
+                            <img src="./img/card1.svg" alt="" class="card__img">
+                        </div>
+                        <h3 class="heading heading--card">
+                            Management
+                        </h3>
+                        <p class="paragraph">
+                            Slate helps you see how many 
+                            more days you need to work 
+                            to reach your financial goal 
+                            for the month and year.
+                        </p>
+                        <a href="" class="card__link">
+                            Learn More
+                        </a>
+                    </div>
+                </div>
+                <div class="col-sm-4 col-xs-12">
+                    <div class="card">
+                        <div class="card__img-wrapper">
+                            <img src="./img/card2.svg" alt="" class="card__img">
+                        </div>
+                        <h3 class="heading heading--card">
+                            Management
+                        </h3>
+                        <p class="paragraph">
+                            Slate helps you see how many 
+                            more days you need to work 
+                            to reach your financial goal 
+                            for the month and year.
+                        </p>
+                        <a href="" class="card__link">
+                            Learn More
+                        </a>
+                    </div>
+                </div>
+                <div class="col-sm-4 col-xs-12">
+                    <div class="card">
+                        <div class="card__img-wrapper">
+                            <img src="./img/card3.svg" alt="" class="card__img">
+                        </div>
+                        <h3 class="heading heading--card">
+                            Management
+                        </h3>
+                        <p class="paragraph">
+                            Slate helps you see how many 
+                            more days you need to work 
+                            to reach your financial goal 
+                            for the month and year.
+                        </p>
+                        <a href="" class="card__link">
+                            Learn More
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="quick-easy">
+        <div class="container container-fluid">
+            <div class="row">
+                <div class="col-sm-6 col-xs-12">
+                    <h2 class="heading">
+                        Quick & Easy Process
+                    </h2>
+                    <p class="paragraph">
+                        Most calendars are designed for teams. Slate is designed 
+                        for freelancers who want a simple way to plan
+                         their schedule.
+                    </p>
+                    <div class="quick-easy__button-wrapper-laptop flex">
+                        <a href="" class="button button--sign-up-free">sign up for free</a>
+                        <a href="" class="button button--find-out">find out more</a>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-xs-12">
+                    <div class="quick-easy__img-wrapper">
+                        <img src="./img/quick.svg" alt="" class="quick-easy__img">
+                    </div>
+                </div>
+                <!-- POGU DUBLIKĀTS, KURŠ AR MEDIA TIKS NOŅEMTS/UZLIKTS TIKAI UZ MOBILE SKATU -->
+                <div class="col-xs-12">
+                    <div class="quick-easy__button-wrapper-mobile flex column">
+                        <a href="" class="button button--sign-up-free">sign up for free</a>
+                        <a href="" class="button button--find-out">find out more</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="operation-section">
+        <div class="container container-fluid">
+            <div class="row">
+                <div class="col-xs-12 col-sm-6">
+                    <div class="operation__img-wrapper first-sm">
+                        <img src="./img/operation.svg" alt="img" class="operation__img">
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-6 first-xs last-sm">
+                    <h2 class="heading">
+                        Perfect for Operations 
+                        HR and Finance
+                    </h2>
+                    <p class="paragraph">
+                        Most calendars are designed for teams. Slate is designed 
+                        for freelancers who want a simple way to plan
+                         their schedule.
+                    </p>
+                    <a href="" class="button operations__button-laptop">Button</a>
+                </div>
+                 <!-- POGAS DUBLIKĀTS, KURŠ AR MEDIA TIKS NOŅEMTS/UZLIKTS TIKAI UZ MOBILE SKATU -->
+                <div class="col-xs-12 last-xs">
+                    <a href="" class="button operations__button-mobile">Button</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="business-section">
+        <div class="container container-fluid">
+            <div class="row">
+                <div class="col-xs-12 col-sm-4 pos-relative">
+                    <h2 class="heading">
+                        Perfect solution 
+                        for small 
+                        businesse
+                    </h2>
+                    <p class="paragraph">
+                        Being a freelancer is a 
+                        rollercoaster of emotions. 
+                        We built Slate to keep your 
+                        freelance business less stressful. 
+                        We'd love to show you 
+                        what we're building...
+                    </p>
+                    <div class="business__button-wrapper-laptop">
+                        <a href="" class="button button--sign-up-free">sign up for free</a>
+                        <a href="" class="button button--find-out">find out more</a>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-6">
+                    <div class="business__img-wrapper">
+                        <img src="https://picsum.photos/800/600" alt="img" class="business__img">
+                    </div>
+                </div>
+                <!-- POGU DUBLIKĀTS, KURŠ AR MEDIA TIKS NOŅEMTS/UZLIKTS TIKAI UZ MOBILE SKATU -->
+                <div class="col-xs-12">
+                    <div class="business__button-wrapper-mobile flex column">
+                        <a href="" class="button button--sign-up-free">sign up for free</a>
+                        <a href="" class="button button--find-out">find out more</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <section class="pricing-section" id="product">
+        <div class="container container-fluid">
+            <div class="row">
+                <div class="col-xs-12">
+                    <h2 class="heading">
+                        Simple Pricing for Your Team
+                    </h2>
+                    <p>
+                        Slate helps you see how many more days you need 
+                    </p>
+                </div>
+                <div class="col-xs-12 col-sm-4 flex column">
+                    <div class="tile">
+                        <h3 class="heading tile__title" >
+                            Education
+                        </h3>
+                        <h4 class="heading tile__title tile__title--small">
+                            Something about this tile
+                        </h4>
+                        <div class="tile__img-wrapper">
+                            <img src="./img/edu.svg" alt="img" class="tile__img">
+                        </div>
+                        <div class="tile__list flex column">
+                            <span class="tile__list-item ">Only 2 Operators</span>
+                            <span class="tile__list-item ">Abandoned Cart</span>
+                            <span class="tile__list-item ">Facebook & Instagram Ads</span>
+                            <span class="tile__list-item tile__list-item--light">Order Notifications</span>
+                            <span class="tile__list-item tile__list-item--light">Landing Pages</span>
+                        </div>
+                        <a href="" class="button">
+                            Order Now
+                        </a>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-4 flex column">
+                    <div class="tile">
+                        <h3 class="heading tile__title" >
+                            Education
+                        </h3>
+                        <h4 class="heading tile__title tile__title--small">
+                            Something about this tile
+                        </h4>
+                        <div class="tile__img-wrapper">
+                            <img src="./img/pro.svg" alt="img" class="tile__img">
+                        </div>
+                        <div class="tile__list flex column">
+                            <span class="tile__list-item ">Only 2 Operators</span>
+                            <span class="tile__list-item ">Abandoned Cart</span>
+                            <span class="tile__list-item ">Facebook & Instagram Ads</span>
+                            <span class="tile__list-item tile__list-item--light">Order Notifications</span>
+                            <span class="tile__list-item tile__list-item--light">Landing Pages</span>
+                        </div>
+                        <a href="" class="button">
+                            Order Now
+                        </a>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-4 flex column">
+                    <div class="tile">
+                        <h3 class="heading tile__title" >
+                            Education
+                        </h3>
+                        <h4 class="heading tile__title tile__title--small">
+                            Something about this tile
+                        </h4>
+                        <div class="tile__img-wrapper">
+                            <img src="./img/bus.svg" alt="img" class="tile__img">
+                        </div>
+                        <div class="tile__list flex column">
+                            <span class="tile__list-item ">Only 2 Operators</span>
+                            <span class="tile__list-item ">Abandoned Cart</span>
+                            <span class="tile__list-item ">Facebook & Instagram Ads</span>
+                            <span class="tile__list-item tile__list-item--light">Order Notifications</span>
+                            <span class="tile__list-item tile__list-item--light">Landing Pages</span>
+                        </div>
+                        <a href="" class="button">
+                            Order Now
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <hr class="pricing__under-section-line">
+        </div>
+    </section>
+    <section class="subscribe">
+        <div class="container container-fluid">
+            <div class="row">
+                <div class="col-xs-12">
+                    <h2 class="heading">
+                        SUBSCRIBE
+                    </h2>
+                    <h4>
+                        Subscribe to get exclusive news & offerS
+                    </h4>
+                    <form action="" class="subscribe__form">
+                        <input type="text" placeholder="Enter Your Email Adress" class="subscribe__input">
+                        <a href="" class="button">
+                            SUBSCRIBE
+                        </a>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="footer" id="contact">
+        <div class="container container-fluid">
+            <div class="row">
+                <div class="col-xs-12 col-sm-4">
+                    <div class="footer__item-wrapper">
+                        <div class="footer__items-left">
+                            <span class="footer__price-item">Price Item One</span>
+                            <span class="footer__price-item">Price Item Two</span>
+                            <span class="footer__price-item">Price Item Three</span>
+                        </div>
+                        <div class="footer__items-right">
+                            <span class="footer__price-item">Price Item One</span>
+                            <span class="footer__price-item">Price Item Two</span>
+                            <span class="footer__price-item">Price Item Three</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-4">
+                    <div class="footer__img-wrapper">
+                        <img src="./img/map.svg" alt="img" class="footer__img">
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-4">
+                    <i class="fa fa-map-marker" aria-hidden="true"></i>
+                    <i class="fa fa-mobile" aria-hidden="true"></i>
+                    <i class="fa fa-twitter-square" aria-hidden="true"></i>
+                    <i class="fa fa-facebook-square" aria-hidden="true"></i>
+                    <i class="fa fa-linkedin-square" aria-hidden="true"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <img src="./img/arrowUp.svg" class="arrow-up" onClick="goToTop()" id="goToTopBtn" title="Click Here to go to the top">
+    <script src="scripts.js"></script>
+</body>
+</html>
