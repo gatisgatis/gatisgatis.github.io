@@ -53,6 +53,7 @@ const signUpBack = document.querySelector('.js-sign-up__background')
 
 const signUpClickHandler = () => {
     signUpBack.classList.toggle('active')
+    window.scrollTo({top:0, behavior:'smooth'})
 }
 
 const logo = document.querySelector('.header__logo-wrapper')
