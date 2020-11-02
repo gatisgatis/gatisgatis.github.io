@@ -49,6 +49,7 @@ window.onscroll = () => {
 const goToTop = () => {
     window.scrollTo({top:0, behavior:'smooth'})
 }
+
 const signUpBack = document.querySelector('.js-sign-up__background')
 
 const signUpClickHandler = () => {
@@ -64,3 +65,23 @@ const addAnimation = () => {
         logo.classList.remove('animate__heartBeat')
     },1000)
 }
+
+const subscribeBtn = document.querySelector('.js-button--subscribe')
+const email = document.querySelector('.js-subscribe__input')
+const popUpCloseBtn = document.querySelector('.subscribe__pop-up-close-icon')
+const popUpBackground = document.querySelector('.subscribe--overlay')
+const popUpWindow = document.querySelector('.subsribe__pop-up')
+let outputText = document.querySelector('.header-2--pop-up')
+
+
+subscribeBtn.addEventListener('click', () => {
+    popUpWindow.classList.add('active')
+    popUpBackground.classList.add('active')
+    outputText.innerHTML = `Congratulations! You just subscribed using email: </br> ${email.value}`
+})
+
+popUpCloseBtn.addEventListener('click', () => {
+    popUpWindow.classList.remove('active')
+    popUpBackground.classList.remove('active')
+    email.value = ''
+})

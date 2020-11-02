@@ -243,7 +243,7 @@
                 <!-- POGU DUBLIKĀTS, KURŠ AR MEDIA TIKS NOŅEMTS/UZLIKTS TIKAI UZ MOBILE SKATU -->
                 <div class="col-xs-12 flex center-xs">
                     <div class="business__button-wrapper-mobile flex column">
-                        <a href="" class="button button--sign-up-free">sign up for free</a>
+                        <a href="" class="button button--sign-up-free" onClick="signUpClickHandler()">sign up for free</a>
                         <a href="" class="button button--find-out">find out more</a>
                     </div>
                 </div>
@@ -339,7 +339,7 @@
             </div>
         </div>
     </section>
-    <section class="subscribe">
+    <section class="subscribe pos-relative">
         <div class="container container-fluid">
             <div class="row">
                 <div class="col-xs-12 flex column middle-xs">
@@ -350,11 +350,18 @@
                         Subscribe to get exclusive news & offers
                     </p>
                     <form action="" class="subscribe__form">
-                        <input type="text" placeholder="Enter Your Email Adress" class="subscribe__input">
-                        <a href="" class="button button--subscribe">
+                        <input type="text" placeholder="Enter Your Email Adress" class="subscribe__input js-subscribe__input">
+                        <a href="" class="button button--subscribe js-button--subscribe">
                             SUBSCRIBE
                         </a>
                     </form>
+                    <div class="subsribe__pop-up flex center-xs middle-xs" id="subsribe__pop-up">
+                        <h2 class="header-2 header-2--pop-up">
+                            Congratulations! You just subscribed using email: ???
+                        </h2>
+                        <div class="subscribe__pop-up-close-icon">X</div>
+                    </div>
+                    <div class="subscribe--overlay"> </div>
                 </div>
             </div>
         </div>
@@ -386,7 +393,7 @@
                 </div>
                 <div class="col-xs-12 col-sm-4 flex column footer__left-wrapper">
                     <div class="footer__contact flex"><i class="fa fa-map-marker footer__icon" aria-hidden="true"></i>   7480 Mockingbird Hill undefined</div>
-                    <div class="footer__contact"><i class="fa fa-map-marker footer__icon" aria-hidden="true"></i>   (423) 555-2125</div>
+                    <div class="footer__contact"><i class="fa fa fa-mobile footer__icon" aria-hidden="true"></i>   (423) 555-2125</div>
                     <div class="footer__social-icons flex">
                         <i class="fa fa-twitter-square footer__icon" aria-hidden="true"></i>
                         <i class="fa fa-facebook-square footer__icon" aria-hidden="true"></i>
