@@ -1,4 +1,4 @@
-# gatisgatis.github.io
+# First full landing page desing. First steps in HTML, CSS, JS
 
 https://gatisgatis.github.io/index
 
