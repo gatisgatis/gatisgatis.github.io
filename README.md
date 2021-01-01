@@ -1,6 +1,6 @@
 # First full landing page desing. First steps in HTML, CSS, JS
 
-https://gatisgatis.github.io/index
+https://gatisgatis.github.io/landing-page-v1
 
 https://www.figma.com/community/file/827476389981384556
 
